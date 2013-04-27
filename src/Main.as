@@ -7,7 +7,7 @@ package
 	{
 		public function Main()
 		{
-			super(CC.WINDOWWIDTH / 2, CC.WINDOWHEIGHT / 2, PlayState, 2); //Create a new FlxGame object and load "PlayState"
+			super(CC.WINDOWWIDTH / CC.WINDOWSCALE, CC.WINDOWHEIGHT / CC.WINDOWSCALE, PlayState, CC.WINDOWSCALE); //Create a new FlxGame object and load "PlayState"
 			this.forceDebugger = true;
 			this.useSystemCursor = true;
 			
